@@ -1,15 +1,14 @@
 package model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
 
-public class Ticket {
+public class ParkingTicket {
 
     private String no;
     private LocalDateTime dateTime;
 
-    public Ticket(){
+    public ParkingTicket(){
         this.no = generateNo();
         this.dateTime = LocalDateTime.now();
     }
