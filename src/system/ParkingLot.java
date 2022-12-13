@@ -6,6 +6,8 @@ import java.util.*;
 
 public class ParkingLot {
 
+    private static final int MIN = 1;
+    private static final int MAX = 3;
     // Using parking lot as a Map so Floor no and parking spots on that floor
     /*
         In this case i am assuming that Their are 3 Floors and Each floor has 6 spots
@@ -27,7 +29,11 @@ public class ParkingLot {
                 .count();
         if(count > 24) System.out.println("Sorry, All the parking spots are full");
         else{
-            System.out.println("Place available");
+//            parkingLot.forEach((k, v) ->{
+//                if(v.size() < 8){
+//                    v.add(car);
+//                }
+//            });
         }
     }
 
