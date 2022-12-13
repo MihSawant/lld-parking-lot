@@ -21,7 +21,7 @@ public class Customer {
     }
 
     public void printCustomerDetails(){
-        System.out.printf("Name: %s, Ticket: %s, Vehicle Number: %s",
+        System.out.printf("Name: %s, Ticket: %s, Vehicle Number: %s%n",
                 name, parkingTicket.getTicketNo(), vehicleNo);
     }
 
