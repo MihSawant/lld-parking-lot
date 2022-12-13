@@ -14,7 +14,7 @@ public class DisplayBoard {
         map = new ParkingLot().getLot();
     }
 
-    public void printSpots(){
+    public void printLot(){
         map.forEach((floor, spots) -> System.out.println(floor+" "+ spots));
     }
 
