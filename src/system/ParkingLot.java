@@ -29,11 +29,19 @@ public class ParkingLot {
                 .count();
         if(count > 24) System.out.println("Sorry, All the parking spots are full");
         else{
-//            parkingLot.forEach((k, v) ->{
-//                if(v.size() < 8){
-//                    v.add(car);
-//                }
-//            });
+            // We need to add the car into the lot
+            // First we will check the floors one by one
+            // printing spots
+            List<Customer> floorOne = parkingLot.get(1);
+            List<Customer> floorTwo = parkingLot.get(2);
+            List<Customer> floorThree = parkingLot.get(3);
+
+            floorOne.add(car);
+            floorOne.addAll(floorTwo);
+            floorOne.addAll(floorThree);
+
+
+
         }
     }
 
