@@ -9,7 +9,7 @@ public class Test {
         ParkingLot lot = new ParkingLot();
         DisplayBoard board = new DisplayBoard();
         lot.park(c);
-
+        board.printLot();
 
     }
 }
